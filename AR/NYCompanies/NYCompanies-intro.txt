@@ -1,0 +1,21 @@
+
+#Python 2.7 is used in apriori.py
+
+#You can find more info in the paper below.
+#Agrawal, Rakesh, and Ramakrishnan Srikant. "Fast algorithms for mining association rules." Proc. 20th int. conf. very large data bases, VLDB. Vol. 1215. 1994.
+
+
+#The dataset is a copy of the "Online directory of certified businesses with a detailed profile" file from the Small Business Services#SBS) dataset in the NYC Open Data Sets <http://nycopendata.socrata.com/>.
+
+#In the dataset, each line is some information about a different company in New York, e.g., company types, stuffs, address, postcode.
+
+#Some short terms used in the dataset.
+# MBE = Minority owned Business Enterprise Program
+# WBE = Women-owned Business Enterprise Program
+# EBE = Emerging Business Enterprise Program 
+# LBE = Locally-based Business Enterprise Program 
+
+
+#To Run the code with minSupport = 0.3 and minConfidence = 0.1
+python apriori.py -f INTEGRATED-DATASET.csv -s 0.1 -c 0.1
+#Then, Frequent Item Sets and Association Rules will be printed respectively.
